@@ -21,4 +21,3 @@ else
  cout<<"The maximum number is"<<n3;
 }
 }
-
