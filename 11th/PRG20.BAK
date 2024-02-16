@@ -3,18 +3,27 @@
 #include <conio.h>
 
 int add(int a , int b)
-return (a+b);
+{
+return(a+b);
+}
 int add(int a , int b , int c)
-return (a+b+c);
-int add(int a , int b , int c ,int d)
-return (a+b+c+d);
+{
+return(a+b+c);
+}
+int add(int a , int b , int c ,long d)
+{
+return(a+b+c+d);
+}
 
 void main()
 {
  clrscr();
- int a , b , c , d;
- cout<<"Adding two numbers "<<add(a,b)
- cout<<"Adding three numbers "<<add(a,b,c)
- cout<<"Adding four numbers "<<add(a,b,c,d)
+ int a , b , c;
+ long d;
+ cout<<"Enter four numbers\n";
+ cin>>a>>b>>c>>d;
+ cout<<"\nAdding two numbers, sum = "<<add(a,b);
+ cout<<"\nAdding three numbers, sum = "<<add(a,b,c);
+ cout<<"\nAdding four numbers, sum = "<<add(a,b,c,d);
  getch();
 }
