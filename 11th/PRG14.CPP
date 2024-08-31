@@ -15,12 +15,10 @@ return (2*(l+b));
 void main()
 {
  clrscr();
- float l , b , p , a;
+ float l , b;
  cout<<"Enter length and breadth of rectangle\n";
  cin>>l>>b;
- a = area(l,b);
- cout<<"Area of a rectangle is "<<a;
- p = perimeter(l,b);
- cout<<"\nArea of a rectangle is "<<p;
+ cout<<"Area of a rectangle is "<<area(l, b);
+ cout<<"\nArea of a rectangle is "<<perimeter(l, b);
  getch();
 }
