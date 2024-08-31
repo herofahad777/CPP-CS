@@ -5,22 +5,22 @@
 void main()
 {
 clrscr();
-int n, t1=0, t2=1, t3;
+int num, n1=0, n2=1, n3;
 
 cout<<"Enter a positive number\n";
-cin>>n;
-cout<<"0,1";
+cin>>num;
+cout<<"0, 1";
 
 for(int i=0;i<n;i++)
 {
-t3=t1+t2;
-if(t3>n)
+n3=n1+n2;
+if(n3>n)
 {
 break;
 }
-cout<<","<<t3;
-t1=t2;
-t2=t3;
+cout<<", "<<n3;
+n1=n2;
+n2=n3;
 }
 getch();
 }
