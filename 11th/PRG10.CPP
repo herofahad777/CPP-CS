@@ -9,14 +9,19 @@ int num, n1=0, n2=1, n3;
 
 cout<<"Enter a positive number\n";
 cin>>num;
-cout<<"0, 1";
 
-for(int i=0;i<n;i++)
+for(int i=1;i<=num;i++)
 {
 n3=n1+n2;
-if(n3>n)
+if(i==1)
 {
-break;
+cout<<n1;
+continue;
+}
+if(i==2)
+{
+cout<<", "<<n2;
+continue;
 }
 cout<<", "<<n3;
 n1=n2;

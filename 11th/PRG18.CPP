@@ -1,23 +1,23 @@
-//To sort an array
+//To sort an array using bubble sort
 #include <iostream.h>
 #include <conio.h>
 
 void main()
 {
  clrscr();
- int a[5] , i , y = 1, z = 0;
+ int a[5];
  cout<<"Enter five numbers\n";
- for(i = 0;i < 5;i++)
+ for(int i = 0;i < 5;i++)
  cin>>a[i];
- for(y = 0;y < 5 - 1;y++)
+ for(int i = 0;i < 5 - 1;i++)
  {
-  for(z = 0;z < 5 - y - 1;z++)
+  for(int j = 0;j < 5 - i - 1;j++)
   {
-   if(a[z] > a[z+1])
+   if(a[j] > a[j+1])
    {
-    int temp = a[z];
-    a[z] = a[z+1];
-    a[z+1] = temp;
+    int temp = a[j];
+    a[j] = a[j+1];
+    a[j+1] = temp;
    }
   }
  }
